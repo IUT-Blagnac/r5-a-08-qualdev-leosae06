@@ -29,8 +29,6 @@ Feature: Is it Friday yet?
     | Saturday | Nope   |
 ---
 
-.Validation des tests :
-
 image::tp1test.png[width=80%]
 
 == TP2...
