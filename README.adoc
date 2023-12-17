@@ -30,6 +30,7 @@ Feature: Is it Friday yet?
 ---
 
 .Validation des tests :
+
 image::tp1test.png[width=80%]
 
 == TP2...
