@@ -7,7 +7,7 @@ Ce dépôt concerne les rendus de mailto:A_changer@etu.univ-tlse2.fr[Leo dvl].
 
 == TP1
 
-.Senario TP1 :
+.Scenarios TP1 :
 [source,java]
 ---
 Feature: Is it Friday yet?
@@ -29,7 +29,7 @@ Feature: Is it Friday yet?
     | Saturday | Nope   |
 ---
 
-.Exemple d'image insérée en asciidoc
-image::artifacts-r303.svg[width=80%]
+.Validation des tests :
+image::Resultats Test.png[width=80%]
 
 == TP2...
