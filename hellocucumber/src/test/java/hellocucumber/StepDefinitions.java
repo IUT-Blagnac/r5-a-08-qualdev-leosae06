@@ -7,13 +7,20 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 import org.junit.jupiter.api.Assertions.*;
 
 
-class IsItFriday {
+class IsItFriday{
+
     static String isItFriday(String today) {
-        if(today=="friday"){
-            return "yes";
-        }else return "Nope";
+    if ("Friday".equals(today)) {
+        return "TGIF";
+    } else {
+        return "Nope";
     }
 }
+
+}
+
+
+
 
 public class StepDefinitions {
 
@@ -37,8 +44,13 @@ public class StepDefinitions {
 
     @Then("I should be told {string}")
     public void i_should_be_told(String expectedAnswer) {
-        IsItFriday.isItFriday(today);
-       
+    assertEquals(expectedAnswer, IsItFriday.isItFriday(today));
     }
+
+
+    @Given("today is Friday")
+    public void today_is_friday() {
+    today = "Friday";
+}
 
 }
